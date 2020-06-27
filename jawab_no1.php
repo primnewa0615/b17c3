@@ -42,9 +42,7 @@
  			$potongan	= $total * 0;
  			$totalBayar	= $total - $potongan;
 
- 			echo "Total Harga Barang : ".$total."<br>";
- 			echo "Potongan : ".$potongan;
- 			echo "Total yang harus dibayar : "."<br>";
+ 			return $hasil = array('total' => $total, 'potongan' => $potongan, 'totalBayar' => $totalBayar);
  	}
  	}else{
  		echo "Tidak ada barang dengan nama : ".$barang;;
